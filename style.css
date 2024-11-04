@@ -1,37 +1,67 @@
 body{
-    border:1px solid red;
-    background: black;
-    color:white;
+    background: linear-gradient(rgb(300,300,250),rgb(184, 200, 150),rgb(134, 150, 100),rgb(100,100,50),rgb(50,50,0));
+    color:rgb(4, 4, 4);
     display:grid;
-}
-.top{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin:0;
 
 }
-
-.middle{
-
-}
-.bottom{
-
+header{ display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+    position:top;
 }
 h1{
-    font:helvetica 600 white;
 }
-.about_me{
+h2{font-size: 10px;
+    
+}
+nav{
+    padding: 0;
+    margin: 0;
+    font-weight:bolder;
+
+}
+.logo{
+    text-wrap: wrap;
+    font-weight: bolder;
+}
+.img_logo{
+    width: 100px;
+    height:auto;
+}
+.title{
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
 
 }
 .img_wrapper{
     display: flex;
-
+    flex-direction:row;
 }
 img{
-    border: 4px solid green;
     width: 400px;
     height: auto;
-    flex-direction: column;
 }
-
+.about_me{
+    font-size: 14px;
+    text-wrap: wrap;
+}
 footer{
     position:bottom;
+    color: white;
 
+
+}
+.top{
+    border: red solid 3px;
+}
+.middle{
+    border: blue solid 3px;
+}
+.bottom{
+    border: black solid 3px;
 }
