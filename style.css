@@ -4,6 +4,7 @@
     * {
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 body{ background: var(--bg-color);
     display: flex;
@@ -24,8 +25,10 @@ body{ background: var(--bg-color);
     background: black;
     padding: 0;
     margin: 0;
+
 }
-header{ display:flex;
+header{ 
+    display:flex;
     flex-direction:row;
     justify-content: space-around;
     align-items: center;
@@ -34,7 +37,7 @@ header{ display:flex;
 h1 a{
     font-size: 18px;
 }
-h2{
+h2{ align-content:center;
     font-size: 14px;
     color:black;
 }
@@ -57,7 +60,6 @@ ul {
     width: 100px;
     height:auto;
     border-radius: 50px;
-    border-color:;
 }
 .title{
     font-size: 20px;
@@ -65,18 +67,50 @@ ul {
     justify-content: center;
 
 }
-.image_wrapper{
+.slideshow{
 display:flex;
 flex-direction:row;
-padding: 5px;
-margin: 5px;
+position: relative;
+width 200vh;
+overflow: scroll;
+scroll-behavior: smooth;
 }
 img{
-    width:300px;
+    width:200px;
     height: 200px;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 2px;
 }
+.overlay{
+    display: flex;
+    flex-direction: row;
+    position:absolute;
+    padding:0;
+    margin: 0;
+    top:0;
+    bottom:0;
+    width:205px;
+    height: 205px;
+    border-radius: 20px;
+    opacity:0;
+    transition: .05s ease;
+    background-color: #0a4204;
+}
+.caption{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+.slideshow:hover .overlay:hover {
+    opacity: 1;
+  }
+
 .about_me{
     font-size: 14px;
     text-wrap: wrap;
@@ -87,9 +121,10 @@ img{
     bottom: 0;
     width: 100%;
     height: 30px;
-    background-color: rgb(69, 108, 34);
+    background-color:#0a4204;
     color: white;
     text-align: center;
+    
 }
 #form{
     color:white;
