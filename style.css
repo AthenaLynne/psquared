@@ -1,5 +1,5 @@
 :root{
-    --bg-color:linear-gradient(rgb(140, 216, 68),rgb(69, 108, 34),rgb(0,0,0));
+    --bg-color:linear-gradient(rgb(102, 146, 61),rgb(69, 108, 34),rgb(34,104,17),rgb(139, 179, 122),rgb(107, 167, 69),rgb(0,0,0));
 }
     * {
     margin: 0;
@@ -13,19 +13,21 @@ body{ background: var(--bg-color);
     margin:0;
     text-wrap: wrap;
 }
+.top{height: 200px;
+    width: min-content;
+
+}
 .middlecolumn{
     display: flex;
     flex-direction: column;
     width: 200vh;
     height:150vh;
-    padding:5px;
 }
 #sidebar{
     width: 25%;
     background: black;
     padding: 0;
     margin: 0;
-
 }
 header{ 
     display:flex;
@@ -34,32 +36,43 @@ header{
     align-items: center;
     position:top;
 }
-h1 a{
-    font-size: 18px;
+p, #leckerli-one-regular{ 
+    color: whitesmoke;
+    font-size: 80px;
+    -webkit-text-stroke: black 1px;
+    text-shadow:black 1px 3px;
+    font-family: "Leckerli One", 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing:2px;
+    word-spacing:-25px;
+
 }
 h2{ align-content:center;
-    font-size: 14px;
-    color:black;
+    font-size: 18px;
+    color:whitesmoke;
+    padding: 15px;
+}
+h3{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+#heading{
+    text-decoration: underline;
 }
 a{
+    font-size: 18px;
     text-decoration: none;
     color:black;
-}
-.hamburger:hover{
-    color: white;
-    font-size: 24px;
-}
-ul {
-    list-style:none;
 }
 .logo{
     text-wrap: wrap;
     font-weight: bolder;
 }
 .img_logo{
-    width: 100px;
+    width: 200px;
     height:auto;
-    border-radius: 50px;
+    border-radius: 50%;
 }
 .title{
     font-size: 20px;
@@ -74,6 +87,7 @@ position: relative;
 width 200vh;
 overflow: scroll;
 scroll-behavior: smooth;
+
 }
 img{
     width:200px;
@@ -110,11 +124,6 @@ img{
 .slideshow:hover .overlay:hover {
     opacity: 1;
   }
-
-.about_me{
-    font-size: 14px;
-    text-wrap: wrap;
-}
 .footer{
     position:fixed;
     padding:5px;
@@ -125,6 +134,23 @@ img{
     color: white;
     text-align: center;
     
+}
+th, td {
+    border-bottom: 1px solid black;
+
+  }
+table { padding: 40px;
+    width: 100%;
+    font-size: 24px;
+    color: whitesmoke;
+    text-shadow:1px 1px black;
+}
+th, thead{
+    width: min-content;
+    font-weight: 900;
+    font-size: 26px;
+    text-shadow: 1px 1px black;
+    padding: 5px;
 }
 #form{
     color:white;
