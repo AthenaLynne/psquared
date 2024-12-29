@@ -8,19 +8,20 @@
     max-height:100%;
     max-width: device-width;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
     *{
-        width:max(600px);
+    max-height:100%;
+    max-width: 600px;
         margin: 0px;
         padding: 0;
         border: 0;
     }
     .footer{
-    width: 600px;
+    max-width: 800px;
     border: 0;
     padding:5px;
-    bottom: 0;
     height: 30px;
+    bottom:0;
     background-color:#0a4204;
     color: white;
     text-align: left;
