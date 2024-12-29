@@ -8,7 +8,24 @@
     max-height:100%;
     max-width: device-width;
 }
-
+@media screen and (max-width: 600px){
+    *{
+        width:max(600px);
+        margin: 0px;
+        padding: 0;
+        border: 0;
+    }
+    .footer{
+    width: 600px;
+    border: 0;
+    padding:5px;
+    bottom: 0;
+    height: 30px;
+    background-color:#0a4204;
+    color: white;
+    text-align: left;
+}
+}
 body{ 
     background: var(--bg-color);
     display: flex;
