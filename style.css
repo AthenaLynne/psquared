@@ -36,6 +36,7 @@ body{
     margin:0;
     text-wrap: wrap;
 }
+
 .top{height: 200px;
     width: min-content;
 
@@ -46,7 +47,7 @@ body{
     width: 200vh;
     height:150vh;
 }
-header{ 
+header{ color: whitesmoke;
     display:flex;
     flex-direction:row;
     justify-content: space-around;
@@ -80,13 +81,17 @@ h4{align-content:center;
     padding: 15px;
     
 }
-#heading{
+#pricing{
     text-decoration: underline;
 }
-a{
+a{ color: whitesmoke;
     font-size: 18px;
     text-decoration: none;
-    color:black;
+    
+}
+a:hover a::after{
+    font-weight: bolder;
+    font-size: 24px;
 }
 .logo{
     text-wrap: wrap;
@@ -175,11 +180,7 @@ th, thead{
     text-shadow: 1px 1px black;
     padding: 5px;
 }
-#form{
-    color:white;
-}
-#form:hover{
-    color: black;
-    font-weight: bolder;
-    font-size: 24px;
+.radio-container{
+    text-align: center;
+    font-size: 18px;
 }

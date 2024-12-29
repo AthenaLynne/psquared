@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parker Powder Coating</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.js">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Playwrite+GB+S:ital,wght@0,100;1,100&display=swap');
+        </style>
+</head>
+<body> 
+    <div class="middlecolumn">
+    <header>
+    <div class="logo">
+       <a href=\> <img class="img_logo" src="psquaredlogo.jpg"></a>
+    </div>
+    <div class="title" >  
+        <p id="leckerli-one-regular">PSquared Powder Coating</p>
+        <h4>Est. 2024 West Plains, Missouri </h4>
+    </div> 
+    <div class="form"><a href=\>Home</a></div>
+    <div class="top"></div>
+    </header> 
+
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+    <input name="Email" type="email" placeholder="Email" required><br>
+    <input name="Name" type="text" placeholder="Name" required><br>
+   
+    
+    
+<div class="radio-container">
+  <input type="radio" id="small" name="Size" value="Small">
+  <label for="size"> Small &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </label><br>
+
+  <input type="radio" id="Small, Advanced Difficulty" name="Size" value="Small, Advanced Difficulty">
+  <label for="size"> Small, Advanced Difficulty &nbsp&nbsp&nbsp&nbsp&nbsp</label><br>
+
+  <input type="radio" id="Medium" name="Size" value="Medium">
+  <label for="size"> Medium &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label><br>
+
+  <input type="radio" id="Medium, Advanced Difficulty" name="Size" value="Medium, Advanced Difficulty">
+  <label for="size">Medium, Advanced Difficulty &nbsp</label><br>
+ 
+  <input type="radio" id="Large" name="Size" value="Large">
+  <label for="size"> Large &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label><br>
+
+  <input type="radio" id="Large, Advanced Difficulty" name="Size" value="Large, Advanced Difficulty">
+  <label for="size"> Large, Advanced Difficulty &nbsp&nbsp&nbsp&nbsp</label><br>
+  
+  <input type="radio" id="Ex-Large" name="Size" value="Ex-Large">
+  <label for="size"> Ex-Large &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label><br>
+
+  <input type="radio" id="Ex-Large, Advanced Difficulty" name="Size" value="Ex-Large, Advanced Difficulty">
+  <label for="size"> Ex-Large, Advanced Difficulty</label><br>
+</div>
+<input name="Details" type="text" placeholder="Additional Details" required><br>
+
+ <button type="submit">Send</button> <input type="reset" value="Reset">
+</form>
+<h3>If you are unsure which option to pick below, refer to the chart on the homepage.</h3>
+</body>
