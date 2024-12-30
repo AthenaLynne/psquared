@@ -100,7 +100,7 @@ a:hover a::after{
 .img_logo{
     width: 200px;
     height:auto;
-    border-radius: 50%;
+    border-radius: 45%;
 }
 .title{
     font-size: 20px;
