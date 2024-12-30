@@ -112,7 +112,7 @@ a:hover a::after{
 display:flex;
 flex-direction:row;
 position: relative;
-width 200vh;
+width: 200vh;
 overflow: scroll;
 scroll-behavior: smooth;
 
